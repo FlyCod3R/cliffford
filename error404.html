@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://api-devs.github.io/art/shop.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" type="image/x-icon" href="https://api-devs.github.io/art/favicon.ico">
+    <title>About Us</title>
+    <embed src="./sounds/relaxSound.mp3" autostart="true" hidden="true" loop="true" width="0" height="0" align="bottom"> </embed>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Megrim');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
+@font-face {
+    font-family: IBM;
+    src: url('fonts/IBM-Logo.ttf');
+   }
+
+    body{
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        font-family: 'Megrim', Arial, sans-serif;
+        color: #fff;
+        animation:noise .3s infinite;
+        background: rgb(0,0,0);
+    }
+    @keyframes noise {
+        0% {
+            background-position: 0px 0px;
+        }
+        100% {
+            background-position: 1000px 1000px;
+        }
+    }
+    .main{
+        margin-top: -150px;
+        z-index: 5;
+        text-align: center;
+    }
+    .site{
+        font-size: 1rem;
+        letter-spacing: .3em;
+        margin-bottom: 3em;
+    }
+    .name{
+        font-family: IBM;
+        font-size: 2.5rem;
+        letter-spacing: .3em;
+        margin-top: 30vh;
+        margin-bottom: .75em;
+    }
+    a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 5px;
+        letter-spacing: 1px;
+        margin: 0 20px;
+        font-family: 'Do Hyeon', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        background-image: linear-gradient(#f00 50%, #f00 50%), linear-gradient(silver 50%, silver 50%);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: 0 1px, 100% 1px;
+        color: #fff;
+        padding-bottom: 3px;
+        transition: .3s ease-in-out;
+        letter-spacing: .2em;
+        font-size: .875rem;
+    }
+
+    a:hover {
+        background-size: 100% 1px, 100% 1px;
+        color: #f23a3a;
+    }
+    .a{
+        display: inline-block;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 790px;
+        margin: 4rem auto;
+    }
+    .block{
+        padding: 0px;
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px dashed red;
+
+        border-bottom: none;
+        margin: 10px 10px;
+        height: 180px;
+    }
+    .name-link{
+        margin-top: 1em;
+    }
+    .st0{
+        fill:#444;
+        stroke:silver;
+        stroke-miterlimit:10;
+        fill-opacity: 0;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+
+        animation-name: DrawLine;
+        animation-duration: 4s, 1s, 1s;
+        animation-delay: 0s, 3.5s, 3.5s;
+        stroke-dashArray: 1100;
+        stroke-dashoffset: 0;
+        transition: .2s ease-in-out;
+    }
+    @keyframes DrawLine {
+        from { stroke-dashOffset: 1100; }
+        to { stroke-dashOffset: 0; }
+    }
+    a:hover .st0{stroke:rgba(255, 255, 255, 0); fill-opacity: 1;}
+    @media screen and (max-width:540px) {
+        .a{
+            display: block;
+            margin-bottom: 4px;
+        }
+        .block{
+            width: 100%;
+        }
+    }
+
+    #large-header {
+      position: relative;
+	     width: 100%;
+       height: 100%;
+       margin-left: -15px;
+    }
+
+    #shop1 {
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+    }
+
+    .main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: red;
+	text-align: center;
+  font-size: 2.7em;
+	top: 40%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+#instg{
+  position: absolute;
+  margin: 0;
+	padding: 0;
+	color: #03a9f4;
+	text-align: center;
+	top: 70%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+.main-title2 {
+font-family: calibri;
+position: absolute;
+margin: 0;
+padding: 0;
+color: #f9f1e9;
+text-align: center;
+font-size: 1.5em;
+top: 56%;
+left: 50%;
+-webkit-transform: translate3d(-50%,-50%,0);
+transform: translate3d(-50%,-50%,0);
+}
+.video {
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 85%;
+	left: 50%;
+  opacity: 0.7;
+  border-radius: 40px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+    </style>
+</head>
+<body>
+  <div id="large-header" class="large-header" style="height: 889px;">
+    <canvas id="demo-canvas" width="1920" height="889"></canvas>
+    <h1 class="main-title">ERROR 404</h1>
+    <h2 class="main-title2">Ты пока не можешь сюда попасть.</h2>
+  </div>
+        <script src="./aboutUs/TweenLite.min.js"></script>
+    		<script src="./aboutUs/EasePack.min.js"></script>
+    		<script src="./aboutUs/rAF.js"></script>
+    		<script src="./aboutUs/demo-1.js"></script>
+</body></html>
